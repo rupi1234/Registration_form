@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/Desktop-Wallpaper-Aesthetic-Wallpaper-Romantic.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            // Your validation code here
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>User Registration Form</h1>
+        <form name="registrationForm" onsubmit="return validateForm()" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name">
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" name="phoneNumber">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email">
+
+            <label for="pinCode">Pin Code:</label>
+            <input type="text" name="pinCode">
+
+            <label for="password">Password:</label>
+            <input type="password" name="password">
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" name="confirmPassword">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob">
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
